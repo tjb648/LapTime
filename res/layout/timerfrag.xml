@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<DigitalClock xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent" android:weightSum="1">
 
-</DigitalClock>
+    <Button
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/BTstart" android:layout_gravity="center_vertical"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/timer" android:layout_centerHorizontal="true"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Best:"
+            android:id="@+id/best" android:layout_centerVertical="true" android:layout_alignParentLeft="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Worst:"
+            android:id="@+id/worst" android:layout_below="@+id/best" android:layout_alignLeft="@+id/best"
+            android:layout_marginTop="66dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Average:"
+            android:id="@+id/average"
+            android:layout_marginBottom="59dp" android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+</RelativeLayout>
