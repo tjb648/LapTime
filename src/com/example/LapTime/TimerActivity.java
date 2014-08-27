@@ -14,6 +14,8 @@ public class TimerActivity extends Activity {
      * Called when the activity is first created.
      */
     @Override
+
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
@@ -23,7 +25,8 @@ public class TimerActivity extends Activity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         TimerFragment fragment = new TimerFragment();
-        fragmentTransaction.add(R.id.frame, fragment);
+        fragmentTransaction.add(R.id.timeFrame, fragment).commit();
+
 
     }
 

@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">LapTimetivity</string>
     <string name="timerVal">00:00:00</string>
+    <string name="startLabel">Start</string>
+    <string name="stopLabel">Stop</string>
+    <string name="resetLabel">Reset</string>
 </resources>
